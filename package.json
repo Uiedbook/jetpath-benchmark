@@ -6,7 +6,7 @@
   "scripts": {
     "elysia": "bun elysia/src/index.ts",
     "jetpath": "cd jetpath && bun src/index.ts",
-    "bench": "autocannon --warmup -l -c 100 -d 60s  http://localhost:3000/"
+    "bench": "autocannon --warmup -c 100 -d 10s  http://localhost:3000/"
   },
   "keywords": [],
   "author": "",
