@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "elysia": "bun elysia/src/index.ts",
-    "jetpath": "cd jetpath && bun src/index.ts",
-    "bench": "autocannon --warmup -c 100 -d 10s  http://localhost:3000/"
+    "jetpath": "bun jetpath/src/index.ts",
+    "bench": "autocannon --warmup -c 200 -d 10s  http://localhost:3000/",
+    "bench2": " wrk -t1 -c2 -d10 -R1000000 -L  http://localhost:3000/"
   },
   "keywords": [],
-  "author": "",
+  "author": "friday candour",
   "license": "MIT",
   "dependencies": {
     "autocannon": "^7.12.0"
