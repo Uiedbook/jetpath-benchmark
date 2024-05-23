@@ -1,3 +1,3 @@
 export function GET_(ctx) {
-  ctx.reply("hello world");
+  ctx.send("hello world");
 }

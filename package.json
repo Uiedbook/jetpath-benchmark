@@ -1,18 +1,14 @@
 {
   "name": "jetpath-benchmark",
   "version": "0.0.0",
-  "description": "",
+  "author": "friday candour",
   "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
   "scripts": {
     "elysia": "bun elysia/src/index.ts",
-    "jetpath": "bun jetpath/src/index.ts",
-    "bench": "autocannon --warmup -c 200 -d 10s  http://localhost:3000/",
-    "bench2": " wrk -t1 -c2 -d10 -R1000000 -L  http://localhost:3000/"
-  },
-  "keywords": [],
-  "author": "friday candour",
-  "license": "MIT",
-  "dependencies": {
-    "autocannon": "^7.12.0"
+    "jetpath": "bun jetpath/src/index.routes.ts",
+    "bench": " wrk -t1 -c200 -d30 -R1000000 -L  http://localhost:3000/"
   }
 }

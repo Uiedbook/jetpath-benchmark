@@ -17,6 +17,6 @@
   },
   "type": "module",
   "dependencies": {
-    "jetpath": "latest"
+    "jetpath": "1.4.10"
   }
 }
